@@ -23,7 +23,7 @@ object IO:
 			closeAndAddSuppressed(exception, resource)
 
 	// Safely closes a resource with an exception.
-	def closeAndAddSuppressed(
+	private def closeAndAddSuppressed(
 		e: Throwable | Null,
 		resource: AutoCloseable
 	): Unit =
